@@ -1,0 +1,11 @@
+{
+  "groupId":"eve.nikr.net",
+  "artifactId":"contracts-pricing",
+  "invokerPackage":"eve.nikr.net.client",
+  "apiPackage":"eve.nikr.net.client.api",
+  "modelPackage":"eve.nikr.net.client.model",
+  "library":"okhttp-gson",
+  "serializableModel":"true",
+  "hideGenerationTimestamp":"true",
+  "dateLibrary":"java8"
+}
