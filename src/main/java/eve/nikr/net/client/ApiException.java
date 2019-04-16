@@ -1,6 +1,6 @@
 /*
  * Contracts Appraisal
- * This is a an api to provide EVE Online pricing based on public contracts. Results are cached for 1 hour. You can download the swagger.json at https://api.swaggerhub.com/apis/rihanshazih/contracts-appraisal/1.1.0/swagger.json
+ * This is a an api to provide EVE Online pricing based on public contracts. Results are cached for up to 3 hours. You can download the swagger.json at https://api.swaggerhub.com/apis/rihanshazih/contracts-appraisal/1.1.0/swagger.json
  *
  * OpenAPI spec version: 1.1.0
  * 

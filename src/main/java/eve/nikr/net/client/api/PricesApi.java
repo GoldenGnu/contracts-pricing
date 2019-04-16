@@ -1,6 +1,6 @@
 /*
  * Contracts Appraisal
- * This is a an api to provide EVE Online pricing based on public contracts. Results are cached for 1 hour. You can download the swagger.json at https://api.swaggerhub.com/apis/rihanshazih/contracts-appraisal/1.1.0/swagger.json
+ * This is a an api to provide EVE Online pricing based on public contracts. Results are cached for up to 3 hours. You can download the swagger.json at https://api.swaggerhub.com/apis/rihanshazih/contracts-appraisal/1.1.0/swagger.json
  *
  * OpenAPI spec version: 1.1.0
  * 
@@ -60,8 +60,8 @@ public class PricesApi {
      * @param includePrivate Consider contracts from structures without public access (e.g. nullsec hubs). (optional, default to false)
      * @param bpc Consider only contracts where the given type is a blueprint copy. (optional, default to false)
      * @param security Consider only contracts from systems that are in the given security groups. (optional)
-     * @param materialEfficiency Adjust the blueprint prices for a certain material efficiency. (optional)
-     * @param timeEfficiency Adjust the blueprint prices for a certain time efficiency. (optional)
+     * @param materialEfficiency Consider only contracts with blueprints with a certain material efficiency. Linear regression may be used to calculate prices. (optional)
+     * @param timeEfficiency Consider only contracts with blueprints with a certain time efficiency. Linear regression may be used to calculate prices. (optional)
      * @param callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -136,8 +136,8 @@ public class PricesApi {
      * @param includePrivate Consider contracts from structures without public access (e.g. nullsec hubs). (optional, default to false)
      * @param bpc Consider only contracts where the given type is a blueprint copy. (optional, default to false)
      * @param security Consider only contracts from systems that are in the given security groups. (optional)
-     * @param materialEfficiency Adjust the blueprint prices for a certain material efficiency. (optional)
-     * @param timeEfficiency Adjust the blueprint prices for a certain time efficiency. (optional)
+     * @param materialEfficiency Consider only contracts with blueprints with a certain material efficiency. Linear regression may be used to calculate prices. (optional)
+     * @param timeEfficiency Consider only contracts with blueprints with a certain time efficiency. Linear regression may be used to calculate prices. (optional)
      * @return Prices
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -153,8 +153,8 @@ public class PricesApi {
      * @param includePrivate Consider contracts from structures without public access (e.g. nullsec hubs). (optional, default to false)
      * @param bpc Consider only contracts where the given type is a blueprint copy. (optional, default to false)
      * @param security Consider only contracts from systems that are in the given security groups. (optional)
-     * @param materialEfficiency Adjust the blueprint prices for a certain material efficiency. (optional)
-     * @param timeEfficiency Adjust the blueprint prices for a certain time efficiency. (optional)
+     * @param materialEfficiency Consider only contracts with blueprints with a certain material efficiency. Linear regression may be used to calculate prices. (optional)
+     * @param timeEfficiency Consider only contracts with blueprints with a certain time efficiency. Linear regression may be used to calculate prices. (optional)
      * @return ApiResponse&lt;Prices&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -171,8 +171,8 @@ public class PricesApi {
      * @param includePrivate Consider contracts from structures without public access (e.g. nullsec hubs). (optional, default to false)
      * @param bpc Consider only contracts where the given type is a blueprint copy. (optional, default to false)
      * @param security Consider only contracts from systems that are in the given security groups. (optional)
-     * @param materialEfficiency Adjust the blueprint prices for a certain material efficiency. (optional)
-     * @param timeEfficiency Adjust the blueprint prices for a certain time efficiency. (optional)
+     * @param materialEfficiency Consider only contracts with blueprints with a certain material efficiency. Linear regression may be used to calculate prices. (optional)
+     * @param timeEfficiency Consider only contracts with blueprints with a certain time efficiency. Linear regression may be used to calculate prices. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
